@@ -1,0 +1,9 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (¡MUY IMPORTANTE!)
+.env
+
+# Logs y otros
+npm-debug.log*
+.DS_Store
