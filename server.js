@@ -5,7 +5,9 @@ require('dotenv').config();
 const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*' // Esto permite que cualquier origen (como tu nuevo link de Vercel) se conecte
+}));
 app.use(express.json());
 
 const supabaseUrl = process.env.SUPABASE_URL;
