@@ -33,4 +33,5 @@ app.patch('/api/sites/:id/report-error', async (req, res) => {
   res.json({ message: "Error reportado exitosamente", data });
 });
 
-app.listen(3001, () => console.log("Servidor en puerto 3001"));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Servidor en puerto ${PORT}`));
